@@ -1,40 +1,57 @@
 body {
     text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 .calculator {
-    
+
     display: flex;
     justify-content: center;
+    align-items: center;
+    width: 600px;
+    background-color: grey;
+    min-height: 700px;
+    border-radius: 10%;
     margin-top: 100px;
 }
 
 .container {
     display: flex;
     flex-direction: column;
-    width: 600px;
+    width: 500px;
     height: 600px;
-    background-color: red;
-
 }
 
 #display {
     background-color: black;
-    font-size: 2rem;
+    padding: .2em;
+    font-size: 4rem;
     text-align: right;
     color: white;
 }
+
 .buttons-grid {
     display: grid;
     flex-grow: 1;
     grid-template-columns: repeat(4, 1fr);
- }
+}
 
 .calculator-button {
     text-align: center;
-    font-size: 20px; 
+    font-size: 20px;
 }
 
 .span-2 {
     grid-column: span 2;
+}
+
+.operator {
+    background-color: orange;
+}
+
+button {
+    outline: none;
+    border-radius: 5%;
 }
